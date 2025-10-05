@@ -65,4 +65,4 @@ The script applies the following transformations:
 
 ## Licence
 
-MIT Licence
+CC BY-NC-SA 4.0 International
