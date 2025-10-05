@@ -4,8 +4,9 @@ A Python script to clean Tibetan transcriptions in CSV or Excel files before cre
 
 This was created as part of the PaganTibet project (pagantibet.com) at EPHE-PSL Paris, with funding from the European Union (ERC, Reconstructing the Pagan Religion of Tibet (2023-2028), 101097364). Please cite the associated article:
 
-Griffiths, Rachael and Marieke Meelen. (forthc). Collaborative Workflows for Handwritten Text Recognition in
+```Griffiths, Rachael and Marieke Meelen. (forthc). Collaborative Workflows for Handwritten Text Recognition in
 Under-resourced Manuscript Collections.
+```
 
 ---
 
