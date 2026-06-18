@@ -4,7 +4,7 @@ This repo contains preprocessing and postprocessing utility scripts for the Hand
 
 Meelen, M. and Griffiths, R.M. (2025) ‘Collaborative Workflows for Handwritten Text Recognition in Under-Resourced Manuscript Collections’, _Journal of Open Humanities Data_, 11(1), p. 54. https://doi.org/10.5334/johd.388.
 
-**Abstract.** This article addresses important questions that arise when trying to transcribe large and diverse historical manuscript collections, with a focus on under-resourced languages and scripts. Using a pilot study of challenging Tibetan manuscripts, we propose an efficient collaborative workflow that leverages existing layout recognition and HTR models and tools, including Transkribus, with iterative model training, and quantitative and qualitative error analysis. We show how this approach not only improves transcription accuracy but also provides a flexible framework adaptable to other under-resourced manuscript collections, supporting scalable text digitisation projects.
+**Abstract.** _This article addresses important questions that arise when trying to transcribe large and diverse historical manuscript collections, with a focus on under-resourced languages and scripts. Using a pilot study of challenging Tibetan manuscripts, we propose an efficient collaborative workflow that leverages existing layout recognition and HTR models and tools, including Transkribus, with iterative model training, and quantitative and qualitative error analysis. We show how this approach not only improves transcription accuracy but also provides a flexible framework adaptable to other under-resourced manuscript collections, supporting scalable text digitisation projects._
 
 ---
 ## Table of Contents
@@ -191,9 +191,7 @@ python postprocess_tibetan_transcript.py transcripts.xlsx \
 
 ### Output
 
-If no output filename is supplied, the script automatically creates one by appending `_corrected` to the original filename.
-
-Examples:
+If no output filename is supplied, the script automatically creates one by appending `_corrected` to the original filename. For example:
 
 | Input | Output |
 |---------|---------|
