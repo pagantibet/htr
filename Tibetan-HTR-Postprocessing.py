@@ -1,3 +1,38 @@
+"""
+Tibetan HTR postprocessing script
+
+Description
+-----------
+This script applies rule-based postprocessing to Tibetan HTR output stored in CSV or Excel files. It cleans common OCR/HTR errors involving punctuation, decorative markers, and character misrecognition - based on PaganTibet's diplomatic transcription standards.
+
+The script processes a single column in a dataset, applies deterministic regex corrections, and writes a corrected copy of the file. The original file is not modified.
+
+Key features
+------------
+- Column selection by name or index (with fallback logic)
+- Regex-based Tibetan text normalisation
+- Batch processing of tabular datasets
+- Automatic output file generation
+
+Supported formats:
+- CSV (.csv)
+- Excel (.xlsx, .xls)
+
+Requirements
+------------
+- Python 3.8+
+- pandas
+- openpyxl (for Excel support)
+
+To Use
+-----
+Run from the command line:
+
+    python postprocess_tibetan_transcript.py input_file.csv
+    python postprocess_tibetan_transcript.py input_file.csv -o output.csv
+    python postprocess_tibetan_transcript.py input_file.csv -c column_name
+"""
+
 import argparse
 import pandas as pd
 import os
