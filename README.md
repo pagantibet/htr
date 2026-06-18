@@ -136,6 +136,18 @@ The following transformations are applied sequentially:
      - `༅༅` → `༄༅`
 
 5. Replaces `༐` with `༴` - in keeping with PaganTibet's transcription standards (see, Meelen, M., & Griffiths, R. M. (2025). HTR Input & Correction Manual. Zenodo. https://doi.org/10.5281/zenodo.17257009).
+   
+6. Replaces a no-break tsheg `༌` (U+0F0C) with a normal tsheg `་` (U+0F0B)
+
+7. Replaces `༎` nyis shad (U+0F0E) with two separate shads `།།` (U+0F0D + U+0F0D)
+   
+8. Replaces Khmer `៖` and Tibetan `ཿ` (U+0F7F) with Tibetan gter tsheg `༔`(U+0F14)
+
+9. Replaces `༝` with `྾`
+
+10. Replaces double vowels e.g. `ཻ` (U+0F7B) with two separate characters e.g. `ེེ` (U+0F7A + U+0F7A)
+
+11. Replaces tsa rtags that belong to characters e.g. `ཅ༹`(U+0F45 + U+0F39) -> `ཙ` (U+0F59)
 
 ### Input Formats
 
