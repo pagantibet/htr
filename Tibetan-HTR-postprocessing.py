@@ -68,6 +68,32 @@ def postprocess_tibetan_transcript(text: str) -> str:
     # 5. Replace ༐ with ༴.
     text = re.sub(r"༐", "༴", text)
 
+    # 6. Replace no-break tsheg ༌ with normal tsheg ་.
+    text = re.sub(r"༌", "་", text)
+
+    # 7. Replace ༎ nyis shad with two separate shads །།.
+    text = re.sub(r"༎", "།།", text)
+
+    # 8. Replace Khmer ៖ with Tibetan gter tsheg ༔ (in case of wrong copying).
+    text = re.sub(r"៖", "༔", text)
+
+    # 9. Replace ༝ with ྾.
+    text = re.sub(r"༝", "྾", text)
+
+    # 10. Replace double vowels in one char with two chars.
+    text = re.sub(r"ཻ", "ེེ", text)
+    text = re.sub(r"ཽ", "ོོ", text)
+
+    # 11. Replace ཱུ with two separate chars.
+    text = re.sub(r"ཱུ", "ྰུ", text)
+
+    # 12. Replace ཿ with ༔.
+    text = re.sub(r"ཿ", "༔", text)
+
+    # 13. Replace tsa rtags that belong to characters.
+    text = re.sub(r"ཅ༹", "ཙ", text)
+    text = re.sub(r"ཆ༹", "ཚ", text)
+
     return text
 
 
