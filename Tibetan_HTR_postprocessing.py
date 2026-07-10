@@ -28,9 +28,9 @@ To Use
 -----
 Run from the command line:
 
-    python postprocess_tibetan_transcript.py input_file.csv
-    python postprocess_tibetan_transcript.py input_file.csv -o output.csv
-    python postprocess_tibetan_transcript.py input_file.csv -c column_name
+    python Tibetan_HTR_postprocessing.py input_file.csv
+    python Tibetan_HTR_postprocessing.py input_file.csv -o output.csv
+    python Tibetan_HTR_postprocessing.py input_file.csv -c column_name
 """
 
 import argparse
